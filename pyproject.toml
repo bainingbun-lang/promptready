@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptready"
+version = "0.1.0"
+description = "Empaqueta un repo en un solo .txt limpio y con conteo de tokens, listo para pegar en una IA"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["llm", "ai", "context", "tokens", "cli", "prompt"]
+
+[project.scripts]
+promptready = "promptready:main"
+
+[tool.setuptools]
+py-modules = ["promptready"]
